@@ -1,0 +1,92 @@
+/* nav start*/
+
+.main-menu {
+    width: 100vw;
+    height: 50px;
+    background-color: greenyellow;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.link-holder {
+    flex: 1 1 auto;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+/* hamburger style start */
+.hamburger {
+    display: none;
+    width: 40px;
+    height: 30px;
+    /* background-color: red; */
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ham {
+    background-color: black;
+    margin: 1px auto;
+    flex: 1 1 auto;
+    width: 80%;
+    display: none;
+}
+
+/* hamburger style end */
+.main-menu-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    width: max-content;
+    /* height:50px; */
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+.main-menu-link:hover {
+    background-color: red;
+    color: black;
+    transform: scale(1.07);
+}
+
+.active-link {
+    background-color: black;
+}
+
+/* nav end */
+
+@media (max-width:700px) {
+    .main-menu {
+        /* background-color: red; */
+        justify-content: space-between;
+    }
+
+    .ham,
+    .hamburger {
+        display: flex;
+    }
+
+    .link-holder {
+       display: none;
+    }
+.mobile {display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-around;
+    background-color: yellow;
+    position: absolute;
+    top:50px;
+    width:100vw;
+    z-index: 999;
+
+}
+    
+}

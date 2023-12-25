@@ -1,0 +1,39 @@
+.disease-page {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+
+}
+
+.disease-main {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+.disease-head{
+    margin-left: 15px;
+    text-decoration: underline;
+}
+
+.each-disease{
+    margin: 10px;
+}
+.each-disease h3{
+    text-transform: capitalize;
+    margin: 5px 0 10px 5px;
+}
+.each-disease img{
+    border-radius: 5px;
+}
+.each-disease img:hover{
+    /* border-radius: 5px;
+     */
+     transform: scale(1.03) translateX(20px);
+}
+.p-d{
+    margin:5px 0;
+    font-size: .8em;
+}
+.p-d span{
+    font-weight: 900;
+}

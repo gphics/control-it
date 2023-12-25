@@ -1,0 +1,47 @@
+.home-page {
+    display: flex;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.home-sect {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-intro {
+    width: 45%;
+    margin-left: 2%;
+
+}
+
+.home-hero {
+    width: 45%;
+    margin-left: 2%;
+
+}
+.home-hero img {
+    width: 100%;
+    max-width: 350px;
+    /* height: 250px; */
+}
+.home-hero img:hover{
+    transform: scale(1.02);
+}
+
+@media (max-width:700px) {
+    .home-sect{
+        flex-direction: column;
+    }
+
+    .home-intro, .home-hero{
+        width:95%;
+        margin: 40px auto;
+    }
+    
+}
