@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom"
 import Nav from "./Nav"
-import bacterialDisease from "./assets/store/bacterial"
-import viralDisease from "./assets/store/viral"
-import fungalDisease from "./assets/store/fugal"
+import bacterialDisease from "./assets/DB/bacterial"
+import viralDisease from "./assets/DB/viral"
+import fungalDisease from "./assets/DB/fugal"
 
 function Disease() {
   const { vector } = useParams()
@@ -24,8 +24,8 @@ function Disease() {
         <section className="disease-list">
           {resource.map((props, index) => <DiseaseList {...props} key={index} />)}
         </section>
-    </main>
-      
+      </main>
+
     </div>
   )
 }
